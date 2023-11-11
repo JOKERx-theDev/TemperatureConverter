@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, #534F87,#25215A);
+    caret-color: transparent;
+    overflow: hidden;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/*ADD FONT EXTERNALLY*/
+@font-face {
+    font-family: myFontMedium;
+    src: url(/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf);
+}
+@font-face {
+    font-family: myFontBold;
+    src: url(/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf);
+}
+@font-face {
+    font-family: myFontRegular;
+    src: url(/Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf);
+}
+.container{
+    background: #ffffff67;
+    width: 350px;
+    height: 250px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #fff;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 0% 2%;
+}
+.selectOption{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-top: 7px;
+}
+.selectOption select{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-family: myFontRegular;
+    color: #fff;
+    background: #141246;
+}
+.container h1{
+    margin: 0;
+    text-align: center;
+    font-family: myFontBold;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.container input{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: #fff;
+    background: #141246;
+    height: 30px;
+    border: 1px solid #141246;
+    outline: none;
+    caret-color: #fff;
+    font-family: myFontRegular;
+    padding-left: 2%;
+    border-radius: 10px;
+}
+.container input::placeholder{
+    color: #fff;
+}
+.convertButton{
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 40%;
+    height: 30px;
+    border-radius: 5px;
+    background: #FF1010;
+    border: 1px solid #FF1010;
+    outline: none;
+    cursor: pointer;
+    font-family: myFontRegular;
+    color: #fff;
+    font-size: 14px;
+}
+.convertButton:disabled{
+    opacity: .7;
+    cursor: no-drop;
+}
+.convertedAnswer{
+    text-align: center;
+    margin: 0;
+    font-family: myFontRegular;
+    margin-top: 15px;
+    font-size: 17px;
+    color: #fff;
+    display: none;
+}
+.convertedAnswer.convertedAnswerDisplayed{
+    display: block;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Converter</title>
+</head>
+<body class="body">
+    <div class="container">
+        <h1>Convert Temperature</h1>
+        <div class="selectOption">
+            <select name="from" id="from">
+                <option value="Select-One">Select-One</option>
+                <option value="Celsius">Celsius (°C)</option>
+                <option value="Fahrenheit">Fahrenheit (°F)</option>
+                <option value="Kelvin">Kelvin (K)</option>
+            </select>
+            ~
+            <select name="to" id="to">
+                <option value="Select-One">Select-One</option>
+                <option value="Celsius">Celsius (°C)</option>
+                <option value="Fahrenheit">Fahrenheit (°F)</option>
+                <option value="Kelvin">Kelvin (K)</option>
+            </select>
+        </div>
+        <input type="number" name="temperatureAmount" id="temperatureAmount" placeholder="Conversion Amount">
+        <button class="convertButton">Convert</button>
+        <p class="convertedAnswer">∴ 80°F = 26°C</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
